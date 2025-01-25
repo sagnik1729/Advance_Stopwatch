@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Stopwatch</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Advanced Stopwatch</h1>
+
+        <!-- Theme Selector -->
+        <label for="theme">Choose Theme:</label>
+        <select id="theme">
+            <option value="digital">Digital</option>
+            <option value="retro">Retro</option>
+            <option value="analog">Analog</option>
+        </select>
+
+        <!-- Stopwatch Display -->
+        <div class="stopwatch">
+            <span id="minutes">00</span>:<span id="seconds">00</span>:<span id="milliseconds">00</span>
+        </div>
+
+        <!-- Buttons -->
+        <div class="buttons">
+            <button id="start">Start</button>
+            <button id="lap" class="hidden">Lap</button>
+            <button id="reset" class="hidden">Reset</button>
+            <button id="share" class="hidden">Share Times</button>
+        </div>
+
+        <!-- Lap Times -->
+        <ul id="laps"></ul>
+
+        <!-- History Log -->
+        <h2>History Log</h2>
+        <ul id="history-log"></ul>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
